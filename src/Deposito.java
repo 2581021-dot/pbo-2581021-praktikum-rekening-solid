@@ -10,11 +10,10 @@ public class Deposito extends Rekening implements BerBunga {
 
     @Override
     public boolean tarik(int jumlah) {
-        // Deposito tidak dapat ditarik sebelum jatuh tempo.
-        // Mengembalikan false sesuai kontrak Rekening.
-        return false;
+        throw new UnsupportedOperationException(
+                "Deposito tidak bisa ditarik"
+        );
     }
-
     @Override
     public int potongBiayaAdmin() {
         return 0;
