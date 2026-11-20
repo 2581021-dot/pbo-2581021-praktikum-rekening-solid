@@ -10,9 +10,7 @@ public class Deposito extends Rekening implements BerBunga {
 
     @Override
     public boolean tarik(int jumlah) {
-        throw new UnsupportedOperationException(
-                "Deposito tidak bisa ditarik"
-        );
+        return false;
     }
     @Override
     public int potongBiayaAdmin() {
